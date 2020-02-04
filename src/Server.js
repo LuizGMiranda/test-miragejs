@@ -1,10 +1,12 @@
 import { Server, Model, Factory } from "miragejs";
 import Faker from "faker-br";
+import products from "./mocks/products.json";
 
 export function mockServer() {
   new Server({
     models: {
-      user: Model
+      user: Model,
+      product: Model
     },
 
     factories: {
@@ -20,15 +22,20 @@ export function mockServer() {
         }
       })
     },
+    fixtures: {
+      products
+    },
 
     seeds(server) {
-      server.createList("user", 50);
+      server.loadFixtures();
+      server.createList("user", 5);
     },
 
     routes() {
       this.namespace = "api";
 
       this.resource("users");
+      this.resource("products");
     }
   });
 }

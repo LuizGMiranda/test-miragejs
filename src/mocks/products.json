@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Caneca",
+    "price": 2.5
+  },
+  {
+    "id": 2,
+    "title": "Lapis",
+    "price": 3.5
+  },
+  {
+    "id": 3,
+    "title": "Chave",
+    "price": 2.5
+  },
+  {
+    "id": 4,
+    "title": "Copo",
+    "price": 2.5
+  },
+  {
+    "id": 5,
+    "title": "Telefone",
+    "price": 2.5
+  },
+  {
+    "id": 6,
+    "title": "Boneco",
+    "price": 2.5
+  }
+]
